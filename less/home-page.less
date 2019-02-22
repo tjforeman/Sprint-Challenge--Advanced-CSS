@@ -104,10 +104,43 @@
       p {
         margin-bottom: 26px;
       }
-
+      .inputs{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        @media @mobile{
+          width:100%;
+        }
+      }
+      .input-field{
+        width:40%;
+        display:flex;
+        flex-direction:column;
+        margin-bottom:10px;
+        @media @mobile{
+          width:100%;
+          font-size:2em;
+        }
+      }
+      select{
+        width:40%;
+        margin-bottom:20px;
+        @media @mobile{
+          width:100%;
+          font-size:2em;
+        }
+      }
+      h6{
+        font-size:1.4rem;
+        padding-bottom:5px;
+      }
       .btn {
         .custom-button()
       }//closing button
+      .btn:hover{
+        background-color:@button-color;
+        color:@buttonbkcolor;
+      }
     }//closing walk
 
     .walk-img {

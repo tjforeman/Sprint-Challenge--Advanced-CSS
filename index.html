@@ -1,5 +1,5 @@
 <!doctype html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -58,7 +58,23 @@
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
+        <div class="inputs">
+          <h6>What is your name?</h6>
+          <input type="name" class="input-field" id="name" required placeholder="Enter your name">
+          <h6>What is your email?</h6>
+          <input type="email"  id="email" class="input-field" required placeholder="Enter your Email">
+          <h6>How old are you?</h6>
+          <input type="age" class="input-field" required placeholder="Enter your age"></input>
+          <h6>Where did you hear about us?</h6>
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option  value="student">Internet</option>
+            <option value="job">Friend</option>
+            <option value="learner">School</option>
+            <option value="preferNo">Work</option>
+            <option value="other">Other</option>
+      </select>
+          </div>
         <div class="btn">
           Sign Up
         </div>

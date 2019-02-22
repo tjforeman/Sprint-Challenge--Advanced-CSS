@@ -292,6 +292,42 @@ footer {
 .home .walk p {
   margin-bottom: 26px;
 }
+.home .walk .inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width:500px) {
+  .home .walk .inputs {
+    width: 100%;
+  }
+}
+.home .walk .input-field {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+@media (max-width:500px) {
+  .home .walk .input-field {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+.home .walk select {
+  width: 40%;
+  margin-bottom: 20px;
+}
+@media (max-width:500px) {
+  .home .walk select {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+.home .walk h6 {
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+}
 .home .walk .btn {
   background: #22283A;
   color: white;
@@ -306,6 +342,10 @@ footer {
     width: 100%;
     font-size: 2.2rem;
   }
+}
+.home .walk .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk-img {
   width: 46%;
