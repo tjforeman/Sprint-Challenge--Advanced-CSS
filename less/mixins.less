@@ -1,1 +1,35 @@
 // Mixins Here
+@handfcolor:#f4f4f4;
+@buttonbkcolor:#22283A;
+@button-color:white;
+
+
+//button
+.custom-button(@bk-color:@buttonbkcolor, @f-color:@button-color , @width:27% ){
+    background: @bk-color;
+   color: @f-color;
+   border-radius: 5px;
+   font-size: 1.7rem;
+ width: @width;
+ text-align:center;
+ padding:4px;
+ @media @mobile{
+     width:100%;
+     font-size:2.2rem;
+ }
+}
+
+//escape 
+@mobile:(max-width:500px);
+
+//pictures
+.pics(){
+    @media @mobile{
+        width:100%;
+        height:100%;
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:5%;
+        border-radius:10px;
+}
+}

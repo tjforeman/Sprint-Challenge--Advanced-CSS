@@ -1,5 +1,5 @@
 <!doctype html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -17,12 +17,20 @@
 <body>
 
  <!-- navigation code here -->
-
+ <div class="navigation">
+   <h1>Space Walkers</h1>
+   <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Blog</a>
+    <a href="">Sign In</a>
+   </nav>
+ </div>
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
-
+        <img src="img/main-header.png" alt="sky">
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
@@ -50,14 +58,30 @@
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
+        <div class="inputs">
+          <h6>What is your Name?</h6>
+          <input type="name" class="input-field" id="name" required placeholder="Enter your Name">
+          <h6>What is your Email?</h6>
+          <input type="email"  id="email" class="input-field" required placeholder="Enter your Email">
+          <h6>How old are you?</h6>
+          <input type="age" class="input-field" required placeholder="Enter your Age"></input>
+          <h6>Where did you hear about us?</h6>
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option  value="student">Internet</option>
+            <option value="job">Friend</option>
+            <option value="learner">School</option>
+            <option value="preferNo">Work</option>
+            <option value="other">Other</option>
+      </select>
+          </div>
         <div class="btn">
           Sign Up
         </div>
       </div>
       
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+          <img src="img/space-walk.png" class="walking" alt="Space walking astronaut">
       </div>
 
     </section>
